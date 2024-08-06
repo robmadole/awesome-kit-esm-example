@@ -13,7 +13,7 @@
     "@web/dev-server": "^0.4.6"
   },
   "dependencies": {
-    "@awesome.me/kit-01f9d7b4cf": "^1.0.28",
+    "@awesome.me/kit-01f9d7b4cf": "file:packages/awesome.me-kit-01f9d7b4cf-1.0.28.tgz",
     "@fortawesome/fontawesome-svg-core": "^6.6.0"
   }
 }
