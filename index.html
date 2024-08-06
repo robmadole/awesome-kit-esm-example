@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Packages, module imports, and importmaps</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "@fortawesome/fontawesome-svg-core": "/node_modules/@fortawesome/fontawesome-svg-core/index.mjs",
+        "@awesome.me/kit-01f9d7b4cf": "/node_modules/@awesome.me/kit-01f9d7b4cf/icons/modules/index.mjs"
+      }
+    }
+  </script>
+  <script type="module">
+    import { icon } from '@fortawesome/fontawesome-svg-core';
+    import { byPrefixAndName } from '@awesome.me/kit-01f9d7b4cf';
+
+    const starship = byPrefixAndName['fas']['starship'];
+
+    for (const n of icon(starship).node) {
+      n.style.height = '10em';
+
+      document.body.appendChild(n);
+    }
+  </script>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>

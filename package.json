@@ -1,0 +1,19 @@
+{
+  "name": "awesome-kit-esm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-dev-server --config web-dev-server.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  },
+  "dependencies": {
+    "@awesome.me/kit-01f9d7b4cf": "^1.0.28",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0"
+  }
+}
